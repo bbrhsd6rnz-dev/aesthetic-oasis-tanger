@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aesthetic Oasis est un centre d'esthétique médicale à Tanger spécialisé en épilation laser, HIFU, microneedling, radiofréquence, hydralips et soins du visage.">
+
+<meta name="keywords" content="Centre esthétique Tanger, Épilation laser Tanger, HIFU Maroc, Microneedling Tanger, HydraLips, Radiofréquence, Aesthetic Oasis">
+
+<meta name="author" content="Aesthetic Oasis">
+
+<meta name="robots" content="index, follow">
+
+<meta name="language" content="French">
+
+<meta name="theme-color" content="#171311">
+<meta property="og:title" content="Aesthetic Oasis">
+
+<meta property="og:description" content="Centre d'Esthétique Médicale Premium à Tanger">
+
+<title>Aesthetic Oasis | Centre d'Esthétique Médicale à Tanger</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --background: #171311;       /* أسود دافئ */
+    --surface: #2A211D;          /* بني غامق للبطاقات الداكنة */
+    --beige: #E8D5BE;            /* بيج دافئ */
+    --cream: #F4E8D8;            /* كريمي هادئ */
+    --text-dark: #3B2B22;        /* بني داكن للنصوص */
+    --text-light: #F7F1EA;       /* أبيض كريمي للنصوص فوق الداكن */
+    --primary: #181412;          /* أسود للأزرار */
+    --primary-hover: #5A4335;    /* بني دافئ عند الـ Hover */
+    --border: #C8B297;           /* بيج غامق للحدود */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--beige);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background: rgba(23, 19, 17, 0.15);
+    transition: .4s;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: var(--beige);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#language {
+    background: transparent;
+    color: var(--text-light);
+    border: 1px solid rgba(247, 241, 234, 0.4);
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+#language option {
+    background: var(--background);
+    color: var(--text-light);
+}
+
+.btn-nav {
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: .3s;
+    border: 1px solid var(--border);
+}
+
+.btn-nav:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(90, 67, 53, 0.4);
+}
+
+/* Menu Burger Mobile */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 2px;
+    background: var(--text-light);
+    transition: 0.3s ease;
+}
+
+/* HERO - هنا رجعنا الصورة الأصلية ديالك وثبتناها */
+.hero {
+    height: 100vh;
+    background: url("back5.jpeg") center center/cover no-repeat #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: url("clean.jpeg") center center/cover no-repeat #252525;
+    filter: blur(2px);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+   }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    color: var(--text-light);
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    color: var(--cream);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-gold {
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 15px 35px;
+    border-radius: 40px;
+    transition: .3s;
+    border: 1px solid var(--border);
+}
+
+.btn-gold:hover {
+    background: var(--primary-hover);
+    transform: translateY(-5px);
+}
+
+.btn-outline {
+    text-decoration: none;
+    border: 2px solid var(--text-light);
+    color: var(--text-light);
+    padding: 15px 35px;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.btn-outline:hover {
+    background: var(--text-light);
+    color: var(--background);
+}
+
+/* SECTIONS */
+section {
+    padding: 120px 8%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+.section-intro {
+    max-width: 900px;
+    margin: -20px auto 50px auto;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    color: var(--text-dark);
+    opacity: 0.9;
+}
+
+/* DISTRIBUTING COLORS ON SECTIONS (Aesthetic Rhythm) */
+
+/* 1. Section À Propos: Background Beige + Cards Cream */
+#apropos { 
+    background: var(--cream); 
+}
+#apropos p { 
+    max-width: 900px; 
+    margin: auto; 
+    text-align: center; 
+    line-height: 2; 
+    font-size: 18px; 
+    color: var(--text-dark);
+}
+
+/* 2. Section Résultats: Background Cream + Cards Dark Surface */
+#resultats { 
+    background: rgb(252, 234, 212);
+}
+
+/* 3. Section Témoignages: Background Beige + Testimonial Card Cream */
+#temoignages { 
+    background: var(--beige); 
+}
+.testimonial {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: var(--cream);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+/* 4. Section FAQ: Background Cream + Question Card Light */
+#faq { 
+    background: var(--cream); 
+}
+.faq-section {
+    padding: 100px 8%;
+    background: rgb(252, 232, 235);
+}
+
+/* 5. Section Contact: Background Beige */
+#contact { 
+    background: var(--beige); 
+    text-align: center; 
+}
+#contact p { 
+    margin: 15px 0; 
+    font-size: 18px; 
+    color: var(--text-dark);
+}
+
+/* CARDS CONFIGURATION */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* التناسق ديال الكارط فاش كتكون وسط خلفية بيج أو كريمي */
+.card {
+    background: var(--text-light);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .4s;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: var(--cream);
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.card p {
+    line-height: 1.8;
+    color: var(--text-dark);
+    opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
+    background: var(--background);
+    color: var(--text-light);
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid var(--surface);
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--beige);
+}
+
+footer p {
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 20px; }
+
+/* RESPONSIVE DESIGN */
+@media(max-width:900px){
+    header { padding: 15px 5%; }
+    
+    .burger-menu { display: flex; }
+    
+    .nav-container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--surface);
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px;
+        transition: 0.4s cubic-bezier(0.1, 1, 0.1, 1);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+    }
+    
+    .nav-container.open { right: 0; }
+    
+    nav ul { flex-direction: column; gap: 25px; width: 100%; }
+    nav ul li a { font-size: 18px; color: var(--text-light) !important; display: block; text-align: center; }
+    
+    .nav-actions { flex-direction: column; width: 100%; gap: 25px; }
+    #language { width: 100%; text-align: center; border-color: rgba(255,255,255,0.2); color: var(--text-light) !important; }
+    .btn-nav { width: 100%; text-align: center; }
+
+    .hero-content h1 { font-size: 42px; }
+    .hero-content p { font-size: 16px; }
+    section h2 { font-size: 36px; }
+    .logo { font-size: 22px; }
+}
+
+/* Animations */
+.hero-content { animation: fadeUp 1.3s ease; }
+.card { animation: fadeUp 1s ease; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* GALLERY RESULTS */
+.results-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    margin-top:60px;
+}
+
+.result-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    background: var(--surface); /* لون داكن فخم باش يبرز الصور */
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.result-card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 20px 50px rgba(42, 33, 29, 0.2);
+}
+
+.result-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    transition:0.6s ease;
+    filter:brightness(0.95) contrast(1.02);
+}
+
+.result-card:hover img{
+    transform:scale(1.08);
+}
+
+.result-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(23, 19, 17, 0.7),
+        transparent 60%
+    );
+}
+
+.label{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    z-index:2;
+    background: var(--text-light);
+    color: var(--text-dark);
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.social-buttons .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    color: var(--text-light);
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    box-shadow: 0 10px 25px rgba(23, 19, 17, 0.25);
+    transition:all .35s ease;
+    position:relative;
+    overflow:hidden;
+    border: 1px solid var(--border);
+}
+
+.social-buttons .btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.15);
+    transform:skewX(-25deg);
+    transition:.6s;
+}
+
+.social-buttons .btn:hover::before{
+    left:120%;
+}
+
+.social-buttons .btn:hover{
+    transform:translateY(-6px) scale(1.05);
+    box-shadow: 0 18px 35px rgba(23, 19, 17, 0.35);
+}
+
+.social-buttons .btn:active{
+    transform:scale(.96);
+}
+
+/* FAQ CARD */
+.question-card{
+    max-width:700px;
+    margin:60px auto;
+    background: var(--text-light);
+    padding:45px;
+    border-radius:30px;
+    text-align:center;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.03);
+    transition:.4s;
+}
+
+.question-card:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 30px 80px rgba(42, 33, 29, 0.12);
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:40px;
+    margin-top:60px;
+    align-items:stretch;
+}
+
+.contact-info{
+    background:wheat;
+    color:rgb(8, 8, 8);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.contact-info h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:18px 0;
+    line-height:1.8;
+}
+
+.contact-map{
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.contact-map:hover{
+    transform:translateY(-6px);
+    box-shadow:0 30px 70px rgba(0,0,0,.25);
+}
+
+.contact-map iframe{
+    width:100%;
+    height:100%;
+    min-height:500px;
+    border:none;
+}
+
+@media(max-width:900px){
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+.contact-map iframe{
+    min-height:350px;
+}
+
+}
+.icon-box{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background: #25D366;
+    color:#fff;
+    font-size:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+    animation:float 3s ease-in-out infinite;
+}
+
+.question-card h3{
+    font-size:30px;
+    margin-bottom:10px;
+    color: var(--text-dark);
+}
+
+.question-card p{
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom:30px;
+}
+
+.question-card input,
+.question-card textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border: 1px solid var(--border);
+    border-radius:18px;
+    background: var(--cream);
+    color: var(--text-dark);
+    font-size:16px;
+    transition:.3s;
+}
+
+.question-card input:focus,
+.question-card textarea:focus{
+    background: var(--text-light);
+    box-shadow: 0 0 0 3px rgba(200, 178, 151, 0.4);
+    outline:none;
+}
+
+.question-card textarea{
+    resize:none;
+}
+
+.whatsapp-btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    background: #25D366;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-4px);
+    background:#1EBE5D;
+    box-shadow:0 15px 35px rgba(37,211,102,.35);
+}
+
+@keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-10px); }
+
+}
+.mini-gallery{
+    background:var(--cream);
+    padding:90px 8%;
+}
+.reveal{
+opacity:0;
+transform:translateY(70px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    grid-template-rows:250px 250px;
+
+    gap:20px;
+
+    margin-top:50px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.gallery-grid img:first-child{
+
+    grid-row:1/3;
+}
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#171311;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity .8s;
+}
+
+.loader-logo{
+font-size:42px;
+font-family:'Playfair Display',serif;
+color:#E8D5BE;
+animation:pulse 3.5s infinite;
+}
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#171311;
+color:white;
+font-size:22px;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+@keyframes pulse{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.08);}
+}
+#progress{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:#C8B297;
+z-index:99999;
+}
+</style>
+<script type="application/ld+json">
+{
+
+ "@type":"MedicalBusiness",
+ "name":"Aesthetic Oasis",
+
+ "telephone":"+212775863810",
+ "addressLocality":"Tanger",
+ "addressCountry":"MA"
+ },
+
+}
+</script>
+</head>
+<div id="loader">
+    <div class="loader-logo">Aesthetic Oasis</div>
+</div>
+<body>
+
+<header id="header">
+    <div class="logo">Aesthetic Oasis</div>
+
+    <div class="nav-container" id="nav-container">
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="nav-link" id="nav-accueil">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link" id="nav-apropos">À propos</a></li>
+                <li><a href="#services" class="nav-link" id="nav-soins">Soins</a></li>
+                <li><a href="#resultats" class="nav-link" id="nav-resultats">Résultats</a></li>
+                <li><a href="#faq" class="nav-link" id="nav-faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="nav-actions">
+            <select id="language">
+                <option value="fr">🇫🇷 FR</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="ar">🇲🇦 AR</option>
+            </select>
+            <a href="#contact" class="btn-nav" id="btn-nav-main">Prendre Rendez-vous</a>
+        </div>
+    </div>
+
+    <button class="burger-menu" id="burger-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+
+<section id="accueil" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 id="hero-title">Révélez votre beauté naturelle</h1>
+        <p id="hero-text">
+            Centre d'Esthétique Médicale Premium à Tanger. Des soins innovants pour sublimer votre visage et votre silhouette.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-gold" id="btn-rdv">Prendre Rendez-vous</a>
+            <a href="#services" class="btn-outline" id="btn-soins">Découvrir nos soins</a>
+        </div>
+    </div>
+</section>
+<button id="topBtn">↑</button>
+<div id="progress"></div>
+<section id="why-us" class="reveal">
+    <div class="container ">
+        <h2 id="why-title">Pourquoi Nous Choisir ?</h2>
+        <p class="section-intro" id="why-intro">
+            Chez Aesthetic Oasis, nous mettons l'excellence, l'innovation et l'accompagnement personnalisé au cœur de chaque expérience afin de vous offrir des résultats naturels, durables et harmonieux.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3 id="why1-h">Technologies de Pointe</h3>
+                <p id="why1-p">Nous utilisons des équipements de dernière génération pour garantir efficacité, confort et sécurité.</p>
+            </div>
+            <div class="card">
+                <h3 id="why2-h">Approche Personnalisée</h3>
+                <p id="why2-p">Chaque cliente bénéficie d'un diagnostic précis et d'un programme adapté à ses besoins.</p>
+            </div>
+            <div class="card">
+                <h3 id="why3-h">Professionnalisme</h3>
+                <p id="why3-p">Notre équipe qualifiée vous accompagne avec expertise et attention à chaque étape.</p>
+            </div>
+            <div class="card">
+                <h3 id="why4-h">Résultats Naturels</h3>
+                <p id="why4-p">Nous privilégions des résultats élégants qui respectent votre beauté naturelle.</p>
+            </div>
+            <div class="card">
+                <h3 id="why5-h">Cadre Premium</h3>
+                <p id="why5-p">Un environnement raffiné, confortable et confidentiel pour votre bien-être.</p>
+            </div>
+            <div class="card">
+                <h3 id="why6-h">Suivi Sur Mesure</h3>
+                <p id="why6-p">Un accompagnement complet avant, pendant et après chaque traitement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apropos" class="reveal">
+    <div class="container">
+        <h2 id="about-title">À Propos</h2>
+        <p id="about-text">
+            Bienvenue chez Aesthetic Oasis, un centre médico-esthétique moderne situé à Tanger, dédié à la beauté, au bien-être et à l'épanouissement de la femme. Notre centre combine expertise professionnelle, technologies innovantes et accompagnement personnalisé afin d'offrir des résultats visibles, naturels and durables. Chaque cliente bénéficie d'une prise en charge adaptée à ses besoins et à ses objectifs esthétiques.
+        </p>
+    </div>
+</section>
+
+<section id="services" class="reveal">
+    <div class="container">
+        <h2 id="services-title">Nos Soins</h2>
+        <p class="section-intro" id="services-intro">
+            Découvrez une sélection de soins innovants conçus pour révéler votre beauté naturelle, améliorer votre bien-être et vous offrir des résultats visibles et durables.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3 id="s1-h">Épilation Laser</h3>
+                <p id="s1-p">Une solution durable pour une peau lisse et soyeuse grâce à une technologie laser performante et sécurisée.</p>
+            </div>
+            <div class="card">
+                <h3 id="s2-h">HIFU</h3>
+                <p id="s2-p">Traitement non invasif qui raffermit la peau et redessine les contours du visage grâce aux ultrasons focalisés.</p>
+            </div>
+            <div class="card">
+                <h3 id="s3-h">Microneedling</h3>
+                <p id="s3-p">Stimule naturellement la production de collagène pour améliorer la texture, l'éclat et la qualité de la peau.</p>
+            </div>
+            <div class="card">
+                <h3 id="s4-h">HydraLips</h3>
+                <p id="s4-p">Soin hydratant intensif pour des lèvres douces, repulpées et naturellement sublimées.</p>
+            </div>
+            <div class="card">
+                <h3 id="s5-h">Amincissement</h3>
+                <p id="s5-p">Programmes ciblés pour affiner la silhouette et accompagner vos objectifs de remodelage corporel.</p>
+            </div>
+            <div class="card">
+                <h3 id="s6-h">Radiofréquence</h3>
+                <p id="s6-p">Technologie avancée qui stimule le collagène et aide à raffermir la peau du visage et du corps.</p>
+            </div>
+            <div class="card">
+                <h3 id="s7-h">Lifting Colombien</h3>
+                <p id="s7-p">Technique esthétique non invasive destinée à galber et tonifier certaines zones du corps.</p>
+            </div>
+            <div class="card">
+                <h3 id="s8-h">Madérothérapie</h3>
+                <p id="s8-p">Massage utilisant des instruments en bois pour améliorer la circulation et favoriser le remodelage corporel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mini-gallery reveal">
+
+    <div class="container">
+
+        <h2>Notre Univers</h2>
+
+        <p class="section-intro">
+            Découvrez l'atmosphère élégante de notre centre.
+        </p>
+
+        <div class="gallery-grid">
+
+            <img src="pic1.jpg" alt="hydrafacial">
+
+            <img src="pic2.jpg" alt="blanchiment dentaire">
+
+            <img src="pic3.jpg" alt="microneedling">
+
+            <img src="pic4.jpg" alt="hydralips">
+            <img src="pic5.jpg" alt="manicure">
+            
+        </div>
+
+    </div>
+
+</section>
+
+<section id="resultats"  class="reveal">
+    <div class="container">
+        <h2 id="results-title">Résultats</h2>
+        <p class="section-intro" id="results-intro">
+            Découvrez les transformations de nos patients avant et après leurs traitements.
+        </p>
+        <div class="results-gallery">
+            <div class="result-card">
+                <img src="img2.jpeg" alt="Avant">
+                <span class="label">blanchiment</span>
+            </div>
+            <div class="result-card">
+                <img src="image.jpeg" alt="Après">
+                <span class="label">HydraLips</span>
+            </div>
+            <div class="result-card">
+                <img src="img3.jpeg" alt="Avant">
+                <span class="label">mains</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="faq-section reveal">
+    <div class="container">
+        <!-- Zdna data-i18n khass b h2 -->
+        <h2 data-i18n="faq_title">Une question ?</h2>
+
+        <p class="section-intro" data-i18n="faq_intro">
+            Notre équipe est à votre disposition pour répondre à toutes vos questions.
+        </p>
+
+        <div class="question-card">
+            <div class="icon-box">💬</div>
+
+            <h3 data-i18n="faq_card_title">Posez votre question</h3>
+
+            <p data-i18n="faq_card_desc">
+                Écrivez votre message ci-dessous et contactez-nous directement sur WhatsApp.
+            </p>
+
+            <!-- Placeholder 7ta hwa ghadi nbdloh b JS, khlitha hna default -->
+            <input type="text" id="nom" placeholder="Votre nom" data-i18n-placeholder="placeholder_name">
+
+            <textarea id="question" placeholder="Écrivez votre question..." rows="6" data-i18n-placeholder="placeholder_question"></textarea>
+
+            <button class="whatsapp-btn" id="whatsapp-btn" onclick="sendQuestion()" data-i18n="btn_send">
+                📲 Envoyer sur WhatsApp
+            </button>
+        </div>
+    </div>
+</section>
+<section id="contact"  class="reveal">
+
+    <div class="container">
+
+        <h2>Contactez-nous</h2>
+
+        <div class="contact-wrapper">
+
+            <!-- Informations -->
+            <div class="contact-info">
+
+                <h3>Aesthetic Oasis</h3>
+
+                <p>📍 Tanger, Maroc</p>
+                <p>📞 +212 775 863 810</p>
+
+                <a href="https://wa.me/212775863810" class="btn">
+                    Prendre Rendez-vous
+                </a>
+
+                <div class="social-buttons">
+
+                    <a href="https://www.instagram.com/aesthetic_oasis_tanger" target="_blank" class="btn-social instagram">
+                         Instagram
+                    </a>
+
+                    <a href="https://www.facebook.com/513169538557276" target="_blank" class="btn-social facebook">
+                         Facebook
+                    </a>
+
+                    <a href="https://wa.me/212775863810" target="_blank" class="btn-social whatsapp">
+                         WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Carte -->
+            <div class="contact-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.231209142889!2d-5.8348100999999994!3d35.7451215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b87005c7c5fb7%3A0x81d601bfc2dfbf35!2sAesthetic%20Oasis!5e0!3m2!1sen!2sma!4v1782487134744!5m2!1sen!2sma"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>Aesthetic Oasis</h3>
+    <p>Centre d'Esthétique Médicale Premium</p>
+    <p>© 2026 Tous droits réservés.</p>
+</footer>
+
+<script>window.addEventListener("scroll",()=>{
+
+const scroll=document.documentElement.scrollTop;
+
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+document.getElementById("progress").style.width=(scroll/height)*100+"%";
+
+});
+</script>
+
+<script>const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+topBtn.style.display=window.scrollY>500?"block":"none";
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+</script>
+
+<script>const reveals=document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(sec=>{
+
+const top=sec.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+sec.classList.add("reveal");
+sec.classList.add("active");
+
+}
+
+});
+
+});
+</script>
+
+<script>window.addEventListener("load",()=>{
+const loader=document.getElementById("loader");
+loader.style.opacity="0";
+
+setTimeout(()=>{
+loader.style.display="none";
+},3000);
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Object dyal trjmat
+    const translations = {
+        fr: {
+            navAccueil: "Accueil", navApropos: "À propos", navSoins: "Soins", navResultats: "Résultats", navTemoignages: "Témoignages", navFaq: "FAQ", navContact: "Contact",
+            btnNavMain: "Prendre Rendez-vous",
+            heroTitle: "Révélez votre beauté naturelle",
+            heroText: "Centre d'Esthétique Médicale Premium à Tanger. Des soins innovants pour sublimer votre visage et votre silhouette.",
+            btnRdv: "Prendre Rendez-vous", btnSoins: "Découvrir nos soins",
+            whyTitle: "Pourquoi Nous Choisir ?",
+            whyIntro: "Chez Aesthetic Oasis, nous mettons l'excellence, l'innovation et l'accompagnement personnalisé au cœur de chaque expérience afin de vous offrir des résultats naturels, durables et harmonieux.",
+            w1h: "Technologies de Pointe", w1p: "Nous utilisons des équipements de dernière génération pour garantir efficacité, confort et sécurité.",
+            w2h: "Approche Personnalisée", w2p: "Chaque cliente bénéficie d'un diagnostic précis et d'un programme adapté à ses besoins.",
+            w3h: "Professionnalisme", w3p: "Notre équipe qualifiée vous accompagne avec expertise et attention à chaque étape.",
+            w4h: "Résultats Naturels", w4p: "Nous privilégions des résultats élégants qui respectent votre beauté naturelle.",
+            w5h: "Cadre Premium", w5p: "Un environnement raffiné, confortable et confidentiel pour votre bien-être.",
+            w6h: "Suivi Sur Mesure", w6p: "Un accompagnement complet avant, pendant et après chaque traitement.",
+            aboutTitle: "À Propos",
+            aboutText: "Bienvenue chez Aesthetic Oasis, un centre médico-esthétique moderne situé à Tanger, dédié à la beauté, au bien-être et à l'épanouissement de la femme. Notre centre combine expertise professionnelle, technologies innovantes and accompagnement personnalisé afin d'offrir des résultats visibles, naturels et durables. Chaque cliente bénéficie d'une prise en charge adaptée à ses besoins et à ses objectifs esthétiques.",
+            servicesTitle: "Nos Soins",
+            servicesIntro: "Découvrez une sélection de soins innovants conçus pour révéler votre beauté naturelle, améliorer votre bien-être et vous offrir des résultats visibles et durables.",
+            s1h: "Épilation Laser", s1p: "Une solution durable pour une peau lisse et soyeuse grâce à une technologie laser performante et sécurisée.",
+            s2h: "HIFU", s2p: "Traitement non invasif qui raffermit la peau et redessine les contours du visage grâce aux ultrasons focalisés.",
+            s3h: "Microneedling", s3p: "Stimule naturellement la production de collagène pour améliorer la texture, l'éclat et la quality de la peau.",
+            s4h: "HydraLips", s4p: "Soin hydratant intensif pour des lèvres douces, repulpées et naturellement sublimées.",
+            s5h: "Amincissement", s5p: "Programmes ciblés pour affiner la silhouette et accompagner vos objectifs de remodelage corporel.",
+            s6h: "Radiofréquence", s6p: "Technologie avancée qui stimule le collagène et aide à raffermir la peau du visage et du corps.",
+            s7h: "Lifting Colombien", s7p: "Technique esthétique non invasive destinée à galber et tonifier certaines zones du corps.",
+            s8h: "Madérothérapie", s8p: "Massage utilisant des instruments en bois pour améliorer la circulation et favoriser le remodelage corporel.",
+            resultsTitle: "Résultats", resultsIntro: "Découvrez les transformations de nos patients avant et après leurs traitements.",
+            testimonialsTitle: "Témoignages", testimonialTxt: "Une expérience exceptionnelle. L'équipe est très professionnelle et attentionnée.",
+            contactTitle: "Contactez-Nous",
+            faq_title: "Une question ?",
+            faq_intro: "Notre équipe est à votre disposition pour répondre à toutes vos questions.",
+            faq_card_title: "Posez votre question",
+            faq_card_desc: "Écrivez votre message ci-dessous et contactez-nous directement sur WhatsApp.",
+            placeholder_name: "Votre nom",
+            placeholder_question: "Écrivez votre question...",
+            btn_send: "📲 Envoyer sur WhatsApp",
+            alert_empty: "Veuillez écrire votre question.",
+            wa_msg: "Bonjour,\n\nJe m'appelle {name}.\n\nMa question est :\n\n{question}"
+        },
+        en: {
+            navAccueil: "Home", navApropos: "About", navSoins: "Treatments", navResultats: "Results", navTemoignages: "Testimonials", navFaq: "FAQ", navContact: "Contact",
+            btnNavMain: "Book Appointment",
+            heroTitle: "Reveal Your Natural Beauty",
+            heroText: "Premium Medical Aesthetic Center in Tangier. Innovative treatments to enhance your face and silhouette.",
+            btnRdv: "Book Appointment", btnSoins: "Our Treatments",
+            whyTitle: "Why Choose Us?",
+            whyIntro: "At Aesthetic Oasis, we place excellence, innovation, and personalized care at the heart of everything we do to provide you with natural, lasting results.",
+            w1h: "Advanced Technology", w1p: "We use latest-generation equipment to guarantee medical safety, comfort, and top efficiency.",
+            w2h: "Tailored Approach", w2p: "Every client receives an accurate diagnosis and a treatment plan tailored to their goals.",
+            w3h: "Professional Expertise", w3p: "Our qualified and expert team guides you with absolute care through every single step.",
+            w4h: "Natural Results", w4p: "We prioritize subtle, elegant enhancements that respect your unique features.",
+            w5h: "Premium Setting", w5p: "A refined, welcoming, and strictly confidential environment for your ultimate well-being.",
+            w6h: "Custom Follow-up", w6p: "Comprehensive support and guidance before, during, and after each treatment session.",
+            aboutTitle: "About Us",
+            aboutText: "Welcome to Aesthetic Oasis, a modern medical-aesthetic center located in Tangier, dedicated to the beauty and well-being of women. Our center combines professional medical expertise and cutting-edge technologies to offer visible, natural, and lasting results.",
+            servicesTitle: "Our Treatments",
+            servicesIntro: "Discover our selection of innovative treatments designed to target your needs and deliver outstanding medical-aesthetic results.",
+            s1h: "Laser Hair Removal", s1p: "Long-lasting hair reduction for smooth skin using advanced medical laser technology.",
+            s2h: "HIFU Lifting", s2p: "Non-invasive ultrasound treatment to lift, tighten, and redefine facial contours.",
+            s3h: "Microneedling", s3p: "Boosts natural collagen production to deeply improve skin texture, scars, and radiance.",
+            s4h: "HydraLips", s4p: "Intense hydration treatment for soft, deeply nourished, and naturally plumped lips.",
+            s5h: "Body Slimming", s5p: "Targeted programs designed to eliminate stubborn fat and reshape your silhouette.",
+            s6h: "Radiofrequency", s6p: "Advanced deep heating technology to tighten loose skin on both face and body areas.",
+            s7h: "Vacuum Therapy", s7p: "Non-invasive aesthetic technique aimed to lift, tone, and contour specific body areas.",
+            s8h: "Maderotherapy", s8p: "Dynamic wooden-tool massage designed to boost circulation and break down cellulite.",
+            resultsTitle: "Results", resultsIntro: "Discover the transformations of our patients before and after their treatments.",
+            testimonialsTitle: "Testimonials", testimonialTxt: "An exceptional experience. The team is highly professional and attentive.",
+            contactTitle: "Contact Us",
+            faq_title: "Any Questions?",
+            faq_intro: "Our team is at your disposal to answer all your questions.",
+            faq_card_title: "Ask your question",
+            faq_card_desc: "Write your message below and contact us directly on WhatsApp.",
+            placeholder_name: "Your name",
+            placeholder_question: "Write your question...",
+            btn_send: "📲 Send on WhatsApp",
+            alert_empty: "Please write your question.",
+            wa_msg: "Hello,\n\nMy name is {name}.\n\nMy question is:\n\n{question}"
+        },
+        ar: {
+            navAccueil: "الرئيسية", navApropos: "من نحن", navSoins: "علاجاتنا", navResultats: "النتائج", navTemoignages: "آراء العملاء", navFaq: "الأسئلة الشائعة", navContact: "اتصلي بنا",
+            btnNavMain: "احجزي موعداً",
+            heroTitle: "اكتشفي جمالك الطبيعي",
+            heroText: "مركز تجميل طبي فاخر بمدينة طنجة. أحدث التقنيات والعلاجات المبتكرة لإبراز جمال الوجه والقوام.",
+            btnRdv: "احجزي موعداً", btnSoins: "اكتشفي خدماتنا",
+            whyTitle: "لماذا تختارين مركزنا؟",
+            whyIntro: "في Aesthetic Oasis، نضع التميز والابتكار والرعاية الشخصية في قلب كل تجربة لنقدم لك نتائج طبيعية ودائمة.",
+            w1h: "أحدث التقنيات", w1p: "نعتمد على أجهزة متطورة من الجيل الجديد لضمان الفعالية التامة والأمان والراحة.",
+            w2h: "برامج مخصصة لكِ", w2p: "تستفيد كل عميلة من تشخيص دقيق وبرنامج علاجي مصمم خصيصاً لتلبية احتياجاتها.",
+            w3h: "فريق احترافي ومتخصص", w3p: "طاقمنا المؤهل يرافقك بخبرة وعناية فائقة في كل مرحلة من مراحل علاجك.",
+            w4h: "نتائج طبيعية وأنيقة", w4p: "نركز على إبراز جمالك الحقيقي وتناسق الملامح دون مبالغة وبشكل طبيعي.",
+            w5h: "أجواء راقية وفاخرة", w5p: "بيئة مريحة، هادئة وتضمن لك الخصوصية التامة والاسترخاء أثناء العلاج.",
+            w6h: "متابعة مستمرة", w6p: "مواكبة شاملة ودعم متواصل قبل، خلال، وبعد الانتهاء من كل حصة علاجية.",
+            aboutTitle: "من نحن",
+            aboutText: "مرحباً بكم في Aesthetic Oasis، مركز حديث وعصري للطب التجميلي في طنجة، مخصص للعناية بجمال المرأة وصحتها. يجمع مركزنا بين الخبرة الخبرة المهنية والتقنيات المبتكرة لتقديم نتائج ملموسة وطبيعية تدوم طويلاً.",
+            servicesTitle: "خدماتنا وعلاجاتنا",
+            servicesIntro: "اكتشفي تشكيلتنا الواسعة من العلاجات المتطورة المصممة خصيصاً للعناية ببشرتك وقوامك.",
+            s1h: "إزالة الشعر بالليزر", s1p: "حل نهائي ودائم للحصول على بشرة ناعمة وحريرية باستخدام تقنيات ليزر آمنة وفعالة.",
+            s2h: "تقنية الهايفو (HIFU)", s2p: "شد الوجه ومحاربة الترهلات بدون جراحة عبر الموجات فوق الصوتية المركزة.",
+            s3h: "الميكرونيدلينغ", s3p: "تحفيز الكولاجين الطبيعي لتحسين نضارة البشرة، علاج المسام وتجديد الخلايا.",
+            s4h: "هيدرا ليبس (HydraLips)", s4p: "عناية مكثفة وترطيب عميق للشفاه لتصبح ناعمة، ممتلئة وذات مظهر حيوي.",
+            s5h: "تخسيس وتنسيق القوام", s5p: "برامج متكاملة لنحت الجسم، التخلص من الدهون الموضعية وصقل قوامك.",
+            s6h: "الراديو فريكونسي", s6p: "تقنية متطورة لشد ترهلات الجلد وتحفيز مرونة الأنسجة في الوجه والجسم.",
+            s7h: "الشد الكولومبي", s7p: "تقنية طبيعية وآمنة لإعادة تشكيل وتنسيق مناطق معينة من الجسم بكفاءة.",
+            s8h: "العلاج بالخشب", s8p: "تدليك بأدوات خشبية خاصة لتنشيط الدورة الدموية ومحاربة السيلوليت بفعالية.",
+            resultsTitle: "نتائجنا", 
+            resultsIntro: "علاجاتهم وبعد قبل مرضانا على طرأت التي التحولات اكتشف", // <- Hna ts77at l-guillemet
+            testimonialsTitle: "آراء العميلات", testimonialTxt: "تجربة استثنائية. الفريق محترف للغاية ومتعاون.",
+            contactTitle: "اتصلي بنا",
+            faq_title: "لديك سؤال؟",
+            faq_intro: "فريقنا في خدمتكم للإجابة على جميع أسئلتكم.",
+            faq_card_title: "اطرح سؤالك",
+            faq_card_desc: "اكتب رسالتك أدناه وتواصل معنا مباشرة عبر الواتساب.",
+            placeholder_name: "اسمك",
+            placeholder_question: "اكتب سؤالك هنا...",
+            btn_send: "📲 إرسال عبر الواتساب",
+            alert_empty: "يرجى كتابة سؤالك.",
+            wa_msg: "مرحباً،\n\nاسمي {name}.\n\nسؤالي هو:\n\n{question}"
+        }
+    };
+
+    let currentLang = 'fr'; 
+
+    // Check ila 3ndak language select element f HTML
+    const langSelect = document.getElementById("language");
+    if(langSelect) {
+        langSelect.addEventListener("change", function(){
+            const lang = this.value;
+            currentLang = lang; 
+            const data = translations[lang];
+
+            if(!data) return;
+
+            // Kanchofo ga3 l'elements ila kant 3ndhom l-id safe f HTML bash matw93ch error
+            if(document.getElementById("nav-accueil")) document.getElementById("nav-accueil").textContent = data.navAccueil;
+            if(document.getElementById("nav-apropos")) document.getElementById("nav-apropos").textContent = data.navApropos;
+            if(document.getElementById("nav-soins")) document.getElementById("nav-soins").textContent = data.navSoins;
+            if(document.getElementById("nav-resultats")) document.getElementById("nav-resultats").textContent = data.navResultats;
+            if(document.getElementById("nav-faq")) document.getElementById("nav-faq").textContent = data.navFaq;
+            if(document.getElementById("nav-contact")) document.getElementById("nav-contact").textContent = data.navContact;
+            if(document.getElementById("btn-nav-main")) document.getElementById("btn-nav-main").textContent = data.btnNavMain;
+
+            if(document.getElementById("hero-title")) document.getElementById("hero-title").textContent = data.heroTitle;
+            if(document.getElementById("hero-text")) document.getElementById("hero-text").textContent = data.heroText;
+            if(document.getElementById("btn-rdv")) document.getElementById("btn-rdv").textContent = data.btnRdv;
+            if(document.getElementById("btn-soins")) document.getElementById("btn-soins").textContent = data.btnSoins;
+
+            if(document.getElementById("why-title")) document.getElementById("why-title").textContent = data.whyTitle;
+            if(document.getElementById("why-intro")) document.getElementById("why-intro").textContent = data.whyIntro;
+            for(let i=1; i<=6; i++) {
+                if(document.getElementById(`why${i}-h`)) document.getElementById(`why${i}-h`).textContent = data[`w${i}h`];
+                if(document.getElementById(`why${i}-p`)) document.getElementById(`why${i}-p`).textContent = data[`w${i}p`];
+            }
+
+            if(document.getElementById("about-title")) document.getElementById("about-title").textContent = data.aboutTitle;
+            if(document.getElementById("about-text")) document.getElementById("about-text").textContent = data.aboutText;
+
+            if(document.getElementById("services-title")) document.getElementById("services-title").textContent = data.servicesTitle;
+            if(document.getElementById("services-intro")) document.getElementById("services-intro").textContent = data.servicesIntro;
+            for(let i=1; i<=8; i++) {
+                if(document.getElementById(`s${i}-h`)) document.getElementById(`s${i}-h`).textContent = data[`s${i}h`];
+                if(document.getElementById(`s${i}-p`)) document.getElementById(`s${i}-p`).textContent = data[`s${i}p`];
+            }
+
+            if(document.getElementById("results-title")) document.getElementById("results-title").textContent = data.resultsTitle;
+            if(document.getElementById("results-intro")) document.getElementById("results-intro").textContent = data.resultsIntro;
+            
+            if(document.getElementById("testimonials-title")) document.getElementById("testimonials-title").textContent = data.testimonialsTitle;
+            if(document.getElementById("testimonial-txt")) document.getElementById("testimonial-txt").textContent = data.testimonialTxt;
+            if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = data.contactTitle;
+
+            if(document.querySelector("#faq h2")) document.querySelector("#faq h2").textContent = data.faq_title;
+            if(document.querySelector("#faq .section-intro")) document.querySelector("#faq .section-intro").textContent = data.faq_intro;
+            if(document.querySelector("#faq .question-card h3")) document.querySelector("#faq .question-card h3").textContent = data.faq_card_title;
+            if(document.querySelector("#faq .question-card p")) document.querySelector("#faq .question-card p").textContent = data.faq_card_desc;
+            
+            if(document.getElementById("nom")) document.getElementById("nom").setAttribute("placeholder", data.placeholder_name);
+            if(document.getElementById("question")) document.getElementById("question").setAttribute("placeholder", data.placeholder_question);
+            if(document.querySelector("#faq .whatsapp-btn")) document.querySelector("#faq .whatsapp-btn").innerHTML = data.btn_send;
+
+            if(lang === "ar"){
+                document.body.dir = "rtl";
+                document.body.lang = "ar";
+            } else {
+                document.body.dir = "ltr";
+                document.body.lang = lang;
+            }
+        });
+    }
+
+    // Expose function l l-window bach tkhdam f button click (onclick="sendQuestion()")
+    window.sendQuestion = function() {
+        const nomElement = document.getElementById("nom");
+        const questionElement = document.getElementById("question");
+        
+        if(!nomElement || !questionElement) return;
+
+        const nom = nomElement.value;
+        const question = questionElement.value;
+        const langData = translations[currentLang];
+
+        if (question.trim() === "") {
+            alert(langData.alert_empty);
+            return;
+        }
+
+        let message = langData.wa_msg
+            .replace("{name}", nom || (currentLang === 'ar' ? 'زائرة' : 'Visiteuse'))
+            .replace("{question}", question);
+
+        window.open(
+            "https://wa.me/212775863810?text=" + encodeURIComponent(message),
+            "_blank"
+        );
+    }
+
+    // --- SCROLL ANIMATION (HEADER) ---
+    const header = document.getElementById("header");
+    const burgerBtn = document.getElementById("burger-btn");
+
+    window.addEventListener("scroll", () => {
+        const isMobile = window.innerWidth <= 900;
+        
+        if(window.scrollY > 80){
+            if(header) header.style.background = "#ffffff";
+            if(header) header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.08)";
+            if(document.querySelector(".logo")) document.querySelector(".logo").style.color = "#1C1C1C";
+            if(langSelect) {
+                langSelect.style.color = "#1C1C1C";
+                langSelect.style.borderColor = "rgba(0,0,0,0.2)";
+            }
+            
+            document.querySelectorAll(".burger-menu span").forEach(s => s.style.background = "#1C1C1C");
+            if(!isMobile) {
+                document.querySelectorAll("nav a").forEach(link => link.style.color = "#1C1C1C");
+            }
+        } else {
+            if(header) header.style.background = "rgba(255,255,255,0.15)";
+            if(header) header.style.boxShadow = "none";
+            if(document.querySelector(".logo")) document.querySelector(".logo").style.color = "#ffffff";
+            if(langSelect) {
+                langSelect.style.color = "#ffffff";
+                langSelect.style.borderColor = "rgba(255,255,255,0.4)";
+            }
+            
+            document.querySelectorAll(".burger-menu span").forEach(s => s.style.background = "white");
+            if(!isMobile) {
+                document.querySelectorAll("nav a").forEach(link => link.style.color = "#ffffff");
+            }
+        }
+    });
+
+    // --- NAVIGATION MOBILE (BURGER) ---
+    const navContainer = document.getElementById("nav-container");
+
+    if(burgerBtn && navContainer) {
+        burgerBtn.addEventListener("click", () => {
+            burgerBtn.classList.toggle("open");
+            navContainer.classList.toggle("open");
+        });
+    }
+
+    document.querySelectorAll(".nav-link, .btn-nav").forEach(link => {
+        link.addEventListener("click", () => {
+            if(burgerBtn) burgerBtn.classList.remove("open");
+            if(navContainer) navContainer.classList.remove("open");
+        });
+    });
+});
+</script>
